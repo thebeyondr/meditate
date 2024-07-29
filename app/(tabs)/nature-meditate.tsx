@@ -1,17 +1,17 @@
-import {
-  View,
-  Text,
-  FlatList,
-  Pressable,
-  ImageBackground,
-  StatusBar,
-} from "react-native";
-import React from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
 import AppGradientWrapper from "@/components/AppGradientWrapper";
 import { MEDITATION_DATA } from "@/constants/meditation-data";
 import MEDITATION_IMAGES from "@/constants/meditation-images";
 import { LinearGradient } from "expo-linear-gradient";
+import { router } from "expo-router";
+import React from "react";
+import {
+  FlatList,
+  ImageBackground,
+  Pressable,
+  StatusBar,
+  Text,
+  View,
+} from "react-native";
 
 const NatureMeditate = () => {
   return (
@@ -26,7 +26,7 @@ const NatureMeditate = () => {
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
             <Pressable
-              onPress={() => console.log("med press")}
+              onPress={() => router.push(`/meditate/${item.id}`)}
               className="h-32 mb-2 rounded-lg overflow-hidden border-0.5 border-white/30"
             >
               <ImageBackground
