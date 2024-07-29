@@ -9,6 +9,7 @@ export interface GalleryPreviewData {
 
 export interface AffirmationCategoryProps {
   title: string;
+  path: string;
   data: GalleryPreviewData[];
 }
 

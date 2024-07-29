@@ -3,6 +3,7 @@ import images from "@/constants/affirmation-images";
 const AFFIRMATION_GALLERY = [
   {
     title: "Positivity",
+    path: "positivity",
     data: [
       {
         id: 1,
@@ -28,6 +29,7 @@ const AFFIRMATION_GALLERY = [
   },
   {
     title: "Reduce Anxiety",
+    path: "reduce-anxiety",
     data: [
       {
         id: 5,
@@ -53,6 +55,7 @@ const AFFIRMATION_GALLERY = [
   },
   {
     title: "Success",
+    path: "success",
     data: [
       {
         id: 9,
@@ -78,6 +81,7 @@ const AFFIRMATION_GALLERY = [
   },
   {
     title: "Self-Belief",
+    path: "self-belief",
     data: [
       {
         id: 13,
@@ -103,6 +107,7 @@ const AFFIRMATION_GALLERY = [
   },
   {
     title: "Mental Health",
+    path: "mental-health",
     data: [
       {
         id: 17,
@@ -128,6 +133,7 @@ const AFFIRMATION_GALLERY = [
   },
   {
     title: "Law of Attraction",
+    path: "law-of-attraction",
     data: [
       {
         id: 21,
@@ -153,6 +159,7 @@ const AFFIRMATION_GALLERY = [
   },
   {
     title: "Limiting Beliefs",
+    path: "limiting-beliefs",
     data: [
       {
         id: 25,

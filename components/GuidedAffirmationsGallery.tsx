@@ -5,11 +5,13 @@ import { FlatList, Image, Pressable, Text, View } from "react-native";
 
 interface GuidedAffirmationsGalleryProps {
   title: string;
+  path: string;
   previews: GalleryPreviewData[];
 }
 
 const GuidedAffirmationsGallery = ({
   title,
+  path,
   previews,
 }: GuidedAffirmationsGalleryProps) => {
   return (
@@ -24,9 +26,9 @@ const GuidedAffirmationsGallery = ({
           showsHorizontalScrollIndicator={false}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => (
-            <Link href={`/affirmations.${item.id}`} asChild>
+            <Link href={`/affirmations/${path}--${item.id}`} asChild>
               <Pressable>
-                <View className="h-36 w-32 rounded-md mr-4">
+                <View className="h-36 w-36 rounded-lg mr-4 overflow-hidden">
                   <Image
                     source={item.image}
                     resizeMode="cover"
